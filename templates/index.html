@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="home-content">
+  <h1>Quick-Pickle: Learn Pickleball in 10 Minutes</h1>
+  <div class="home-buttons">
+    <a class="btn nav-btn" href="{{ url_for('learn', page=1) }}">Start</a>
+  </div>
+  <section class="intro">
+    <h2>What Is Pickleball?</h2>
+    <p>Pickleball is a paddle sport that combines elements of tennis, badminton, and ping-pong. You volley or drive the ball over a lowered net, using solid paddles to hit a perforated polymer ball.</p>
+  </section>
+  <section class="items-needed">
+    <h2>Items Needed:</h2>
+    <div class="items-container">
+      <div class="item">
+        <img src="https://vulcansportinggoods.com/cdn/shop/files/V740MHT.png?v=1691079656" alt="Paddle">
+        <p>Paddle</p>
+      </div>
+      <div class="item">
+        <img src="https://i.ebayimg.com/images/g/wxQAAOSwlpNjj2aW/s-l1200.jpg" alt="Ball">
+        <p>Ball</p>
+      </div>
+      <div class="item">
+        <img src="https://joola.com/cdn/shop/files/Elemental-Pickleball-Net-18233-Web-01.png?v=1712314814" alt="Net">
+        <p>Net</p>
+      </div>
+    </div>
+  </section>
+</div>
+{% endblock %}
+

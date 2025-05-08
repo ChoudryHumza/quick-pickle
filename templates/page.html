@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}{{ page.title }}{% endblock %}
+{% block content %}
+  {{ page.content_html | safe }}
+  <div class="navigation text-center my-4">
+    {% if page.prev_page %}
+      <a class="btn nav-btn mr-2" href="{{ url_for('learn', page=page.prev_page) }}">&laquo; Previous</a>
+    {% endif %}
+    {% if page.next_page == 'quiz' %}
+      <a class="btn nav-btn" href="{{ url_for('quiz_question', num=1) }}">Take Quiz &raquo;</a>
+    {% elif page.next_page %}
+      <a class="btn nav-btn" href="{{ url_for('learn', page=page.next_page) }}">Next &raquo;</a>
+    {% endif %}
+  </div>
+{% endblock %}

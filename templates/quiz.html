@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block title %}Question {{ question.number }}/9{% endblock %}
+{% block content %}
+  {% set helper_images = [
+    'https://i0.wp.com/picklegoddesses.com/wp-content/uploads/2023/08/TEM_How-to-Play_H3.png?resize=860%2C460&ssl=1',
+    'https://pickleland.com/wp-content/smush-webp/2024/06/Pickleball-Serve-Rules.png.webp',
+    'https://picklephi.com/wp-content/uploads/2024/04/10_10_11zon.webp',
+    'https://www.shutterstock.com/image-vector/vector-image-two-arrows-right-260nw-1799499322.jpg',
+    'https://images.squarespace-cdn.com/content/v1/61c0b5ba0502384c32458717/1642072819221-YNAOL9S6LTCGG5ZMNB94/7J5A2730.JPG',
+    'https://us-west-2.graphassets.com/cm09r96wy0qax07ln5vscfbra/cm4hi84nq6w5p07n4oi4dlz4j',
+    'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQln7cZqm2TxwLiy0kVK4evAvt7jEd9JhnIoA2rdiKbtnVXzV0ZcpaRT0OO0bfrVPnlha34NoPjkoOL3uiivIYFUt5wjJ2UoX-MMULhicFGFxJmv7kF22eyk74jwfHEBAwAGlX1L0_cEc/s1600/Service3.png',
+    'https://pickleland.com/wp-content/smush-webp/2024/06/Pickleball-Serve-Rules.png.webp',
+    'https://cdn.prod.website-files.com/6750d4ced086f64495bf0eb1/675ce0a53c445d932b019be5_675ce0a0dedbf6430d22279a_Frame%252036.png'
+  ] %}
+  <div class="d-flex">
+    <!-- Left column: question -->
+    <div class="flex-fill" style="min-width: 0;">
+      {{ question.question_html | safe }}
+      <div class="navigation text-center my-4">
+        {% if question.prev_question %}
+          <a id="prev-btn" class="btn nav-btn mr-2"
+             href="{{ url_for('quiz_question', num=question.prev_question) }}">&laquo; Previous</a>
+        {% endif %}
+        <a id="next-btn" class="btn nav-btn disabled" style="display:none;"
+           href="{% if question.next_question!='results' %}
+                   {{ url_for('quiz_question', num=question.next_question) }}
+                 {% else %}
+                   {{ url_for('quiz_results') }}
+                 {% endif %}">
+          {% if question.next_question!='results' %}Next &raquo;{% else %}Result{% endif %}
+        </a>
+      </div>
+    </div>
+
+    <!-- Right column: one helper image -->
+    <div class="flex-shrink-0 ml-4 quiz-helper" >
+      <img
+        src="{{ helper_images[question.number - 1] }}"
+        alt="Helper image for question {{ question.number }}"
+        class="img-fluid"
+      >
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  <script src="{{ url_for('static', filename='quiz.js') }}"></script>
+{% endblock %}

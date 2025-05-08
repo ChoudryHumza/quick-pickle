@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block title %}Quiz Results{% endblock %}
+
+{% block content %}
+  <div class="results-content text-center">
+    <h2>Your Results</h2>
+
+    <!-- Centered score -->
+    <p id="score-text" data-total="9">Loading score…</p>
+
+    <!-- Centered GIF -->
+    <div id="gif-container" class="mt-3"></div>
+
+    <!-- Detailed feedback list (left aligned) -->
+    <ul class="list-group mt-4">
+      {% for q in feedback %}
+        <li class="list-group-item">
+          Q{{ q.number }}: <strong>{{ q.correct_choice }}</strong> &ndash; {{ q.explanation }}
+        </li>
+      {% endfor %}
+    </ul>
+
+    <!-- Centered buttons -->
+    <div class="mt-5 d-flex justify-content-center">
+      <a href="{{ url_for('quiz_question', num=1) }}"
+         class="btn nav-btn mr-3"
+         style="background-color:#dc3545!important;border-color:#dc3545!important;color:#fff!important;">
+        Try Again
+      </a>
+      <a href="{{ url_for('index') }}" class="btn nav-btn">
+        Home
+      </a>
+    </div>
+  </div>
+{% endblock %}
+
+{% block scripts %}
+  <script src="{{ url_for('static', filename='quiz.js') }}"></script>
+{% endblock %}

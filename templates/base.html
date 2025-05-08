@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quick Pickle {{ title }}</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="{{ url_for('index') }}">Quick-Pickle</a>
+    <div class="navbar-nav ml-auto">
+      <a class="nav-item nav-link nav-btn" href="{{ url_for('learn', page=1) }}">Learn</a>
+      <a class="nav-item nav-link nav-btn" href="{{ url_for('quiz_question', num=1) }}">Quiz</a>
+    </div>
+  </nav>
+  <div class="container content">
+    {% block content %}{% endblock %}
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="{{ url_for('static', filename='main.js') }}"></script>
+
+  {% block scripts %}{% endblock %}
+
+</body>
+</html>
