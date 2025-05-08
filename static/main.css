@@ -1,0 +1,217 @@
+/* ==========================================================================
+   Variables (Theme Colors)
+   ========================================================================== */
+   :root {
+    --gold:    #FFD700;
+    --black:   #000;
+    --gray:    #6c757d;
+    --nav-bg:  #99ccff;
+    --text:    #333;
+  }
+  
+  /* ==========================================================================
+     Base Layout & Typography
+     ========================================================================== */
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    color: var(--text);
+  }
+  
+  .container.content {
+    margin-top: 3rem;
+  }
+  
+  h1, .tutorial-content h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .content p,
+  .content ol {
+    margin-left: 2rem;
+  }
+  
+  .content ol {
+    list-style-position: inside;
+    margin-bottom: 1.5rem;
+  }
+  
+  .content strong {
+    font-weight: bold;
+  }
+  
+  /* ==========================================================================
+     Navbar
+     ========================================================================== */
+  .navbar {
+    background-color: var(--nav-bg);
+    padding: 0 2rem;
+    min-height: 100px;
+  }
+  
+  .navbar .navbar-brand {
+    font-size: 2rem;
+    color: var(--text) !important;
+  }
+  
+  .navbar .nav-link,
+  .navbar .nav-btn {
+    background: none !important;
+    border: none !important;
+    color: var(--text)  !important;
+    padding: 0.5rem 1rem !important;
+    border-radius: 4px  !important;
+  }
+  .navbar .nav-link:hover,
+  .navbar .nav-btn:hover {
+    background-color: rgba(0,0,0,0.05) !important;
+  }
+  
+  /* ==========================================================================
+     Buttons (Global)
+     ========================================================================== */
+  .btn,
+  .nav-btn {
+    background-color: var(--gold) !important;
+    color: var(--black)  !important;
+    border: 2px solid var(--black);
+    border-radius: 8px;
+    font-size: 1.25rem;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .nav-btn + .nav-btn {
+    margin-left: 1rem;
+  }
+  
+  /* ==========================================================================
+     Homepage “Start” Button & Section Spacing
+     ========================================================================== */
+  /* Center containers */
+  .home-buttons,
+  .home-content {
+    text-align: center;
+    margin-bottom: 4rem;    /* increased space after these blocks */
+  }
+  
+  /* Make the Start button larger */
+  .home-buttons .nav-btn,
+  .home-content .btn {
+    font-size: 2rem;        /* bigger text */
+    padding: 1rem 2rem;     /* more click-area */
+  }
+  
+  /* ==========================================================================
+     Images
+     ========================================================================== */
+     .content img,
+     .tutorial-content img {
+       display: block;
+       margin: 1rem auto;
+       max-width: 600px;
+       width: 100%;     /* ensures it fills its container up to 800px */
+       height: auto;
+     }
+  
+  /* ==========================================================================
+     “Items Needed” Section (Homepage)
+     ========================================================================== */
+  .items-needed .items-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+  .items-needed .item {
+    text-align: center;
+  }
+  .items-needed .item img {
+    max-width: 200px;
+    margin-bottom: 0.5rem;
+    height: auto;
+  }
+  
+  /* ==========================================================================
+     Tutorial Section Spacing
+     ========================================================================== */
+  .intro,
+  .items-needed,
+  .tutorial-content {
+    margin-bottom: 4rem;    /* consistent spacing between tutorial sections */
+  }
+  
+  /* ==========================================================================
+     Quiz & Tutorial Navigation
+     ========================================================================== */
+  /* Gray‐out “Previous” (first nav-btn) */
+  .navigation a.nav-btn:first-of-type {
+    background-color: var(--gray) !important;
+    color:            #fff      !important;
+    border-color:     var(--gray) !important;
+  }
+  /* Keep “Next” (last nav-btn) gold */
+  .navigation a.nav-btn:last-of-type {
+    background-color: var(--gold) !important;
+    color:            var(--black) !important;
+    border-color:     var(--black) !important;
+  }
+  /* Hide “Next” by default; shown via JS */
+  #next-btn {
+    display: none;
+  }
+  /* Style quiz prefix “QX/Y” */
+  .quiz-content h2 .quiz-number {
+    color:        #555;
+    font-weight:  bold;
+    padding-right: 0.2rem;
+  }
+  
+/* ==========================================================================
+   Enlarge quiz helper images
+   ========================================================================== */
+/* Make the helper-column wider */
+.quiz-helper {
+  flex: 0 0 400px !important; 
+  max-width: 500px !important;
+}
+
+/* Ensure the image fills its container */
+.quiz-helper img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* If you also have inline images inside .quiz-content you want bigger: */
+.quiz-content img {
+  max-width: 800px !important;
+  width: 100% !important;
+  height: auto !important;
+}
+
+
+  /* ==========================================================================
+     Feedback Message (Quiz)
+     ========================================================================== */
+  #feedback-msg {
+    font-weight: bold;
+    margin-top: 0.5rem;
+  }
+  
+  /* ==========================================================================
+     Results Page
+     ========================================================================== */
+  #score-text {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  #result-gif {
+    display: block;
+    margin: 2rem auto;
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+  }
+  
