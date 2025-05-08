@@ -1,0 +1,91 @@
+{
+    "tutorial_pages": [
+        {
+            "page": 1,
+            "title": "Fundamentals of Pickleball",
+            "content_html": "<div class=\"tutorial-content\">\n  <h2>Fundamentals of Pickleball</h2>\n  <p><strong>Tutorial Focus:</strong> Serving, Scoring, and Positioning</p>\n <img src=\"https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWFvaXZ1MWlnNzZnY3VzbDNna3A5bWNmMHY0NzI1bG5qa3Ixb2JsMyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/XSSTbYF0U4EeoQOvum/giphy.gif\" alt=\"tutorial overview\">\n ",
+            "prev_page": null,
+            "next_page": 2
+          },
+          {
+            "page": 2,
+            "title": "Before You Begin",
+            "content_html": "<div class=\"tutorial-content\">\n  <h2>Before You Begin</h2>\n  <ol>\n    <li>Decide which team is going to serve first.</li>\n    <li>Decide which team member is going to serve first.</li>\n  </ol>\n  <img src=\"https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExemlnZGZ4amUwanF2N3ZnOXpzbHB0enZ3M2RjcWtkeW1uajByeTllNiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/J3JIjI0y1rF9LpsRx8/giphy.gif\" alt=\"Coin Flip\">\n  ",
+            "prev_page": 1,
+            "next_page": 3
+          },
+          {
+            "page": 3,
+            "title": "Scoring in Pickleball",
+            "content_html": "<div class=\"tutorial-content\">\n  <h2>Scoring in Pickleball</h2>\n  <ol>\n    <li>Scoring (only serving team can score).</li>\n    <li>Each team has two serves (both players on the team).</li>\n  </ol>\n  <img src=\"https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTV4MjFtOTdxYjBlaGs2aWEwNmppNmlzbWs0c3Z4dXV1MDRseW01eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/2jmnf6gznuL8Q/giphy.gif\" alt=\"Scoring\">\n  ",
+            "prev_page": 2,
+            "next_page": 4
+          },
+      {
+        "page": 4,
+        "title": "Serving Basics",
+        "content_html": "<div class=\"tutorial-content\">\n  <h2>Serving Basics</h2>\n  <ol>\n    <li>Server stands behind baseline.</li>\n    <li>Only at the beginning, server must serve from the right side of the court.</li>\n  </ol>\n  <img src=\"https://cdn.sanity.io/images/jvolei4i/production/b5247363b108ae36cb7d2b7c7fd6e43e7bda410a-736x450.png?w=736&fit=crop\" alt=\"Serve Basics\" class=\"img-fluid\">\n</div>",
+        "prev_page": 3,
+        "next_page": 5
+      },
+      {
+        "page": 5,
+        "title": "Serving Basics Part 2",
+        "content_html": "<div class=\"tutorial-content\">\n  <h2>Serving Basics Part 2</h2>\n  <ol>\n    <li>Server makes a diagonal serve.</li>\n    <li>It must clear the net and land in opponent’s correct service court.</li>\n  </ol>\n  <img src=\"https://cdn.sanity.io/images/jvolei4i/production/0aa2764258ca0bd3be8896232c3f2ed62c283373-736x450.png?w=736&fit=crop\" alt=\"Diagonal Serve\" class=\"img-fluid\">\n</div>",
+        "prev_page": 4,
+        "next_page": 6
+      },
+      {
+        "page": 6,
+        "title": "Double Bounce Rule",
+        "content_html": "<div class=\"tutorial-content\">\n  <h2>Double Bounce Rule</h2>\n  <p>After the serve, the receiving team must let the ball bounce once before returning.</p>\n  <img src=\"https://cdn.sanity.io/images/jvolei4i/production/0aa2764258ca0bd3be8896232c3f2ed62c283373-736x450.png?w=736&fit=crop\" alt=\"Double Bounce 1\" class=\"img-fluid\">\n</div>",
+        "prev_page": 5,
+        "next_page": 7
+      },
+      {
+        "page": 7,
+        "title": "Double Bounce Rule Part 2",
+        "content_html": "<div class=\"tutorial-content\">\n  <h2>Double Bounce Rule Part 2</h2>\n  <p>Then the serving team must also let that return bounce once before hitting it.</p>\n  <p><strong>Example Scenario:</strong> Serve → bounce → return → bounce → volley permitted. No volleys are allowed until after these two bounces.</p>\n  <p><em><strong>Volley –</strong> hit the ball while it’s in the air before it has bounced.</em></p>\n  <img src=\"https://cdn.sanity.io/images/jvolei4i/production/612e2422df42b98e80205c98a2ea67ff60b110e3-736x450.png?w=736&fit=crop\" alt=\"Double Bounce 2\" class=\"img-fluid\">\n</div>",
+        "prev_page": 6,
+        "next_page": 8
+      },
+      {
+        "page": 8,
+        "title": "GAME ON!",
+        "content_html": "<div class=\"tutorial-content\">\n  <h2>GAME ON!</h2>\n  <p>Now, you can let the ball bounce once and then hit it <strong>OR</strong> just volley.</p>\n  <p><em><strong>Volley –</strong> hit the ball while it’s in the air before it has bounced.</em></p>\n  <img src=\"https://cdn.sanity.io/images/jvolei4i/production/f279c48b3e428c3fec413bd99170151d45147ee0-736x450.png?w=736&fit=crop\" alt=\"Game On!\" class=\"img-fluid\">\n</div>",
+        "prev_page": 7,
+        "next_page": 9
+      },
+      {
+        "page": 9,
+        "title": "Scoring: Serving Side Fault (lose)",
+        "content_html": "<div class=\"tutorial-content\">\n  <h2>Scoring: Serving Side Fault (lose)</h2>\n  <div class=\"row\">\n    <div class=\"col text-center\">\n      <strong>Ball Error</strong>\n      <ol class=\"text-left mt-3\">\n        <li>Hit the ball into the net and it fails to clear.</li>\n        <li>Hit the ball out of bounds (beyond any sideline or baseline).</li>\n        <li>Ball bouncing twice on your side before returning it (only one bounce allowed).</li>\n        <li>Strike the ball twice or carry instead of a clean hit.</li>\n      </ol>\n      <img src=\"https://cdn.sanity.io/images/jvolei4i/production/f279c48b3e428c3fec413bd99170151d45147ee0-736x450.png?w=736&fit=crop\" alt=\"Ball Error\" class=\"img-fluid scoring-img\">\n    </div>\n    <div class=\"col text-center\">\n      <strong>Server Fault</strong>\n      <ol class=\"text-left mt-3\">\n        <li>Serve lands outside the correct diagonal service court.</li>\n        <li>Double-bounce rule violation.</li>\n        <li>Volley (third shot) before it bounces.</li>\n   <br><br>   </ol>\n      <img src=\"https://cdn.sanity.io/images/jvolei4i/production/612e2422df42b98e80205c98a2ea67ff60b110e3-736x450.png?w=736&fit=crop\" alt=\"Server Fault\" class=\"img-fluid scoring-img\">\n    </div>\n  </div>\n  <div class=\"results-section text-center mt-4\">\n    <strong>Result</strong>\n    <ol class=\"text-left mt-3\">\n      <li>No score.</li>\n      <li>Next teammate serves (no switching sides here).</li>\n  <br>  </ol>\n  </div>\n</div>",
+        "prev_page": 8,
+        "next_page": 10
+      },
+      {
+        "page": 10,
+        "title": "Scoring: Serving Side Win",
+        "content_html": "<div class=\"tutorial-content\">\n  <h2>Scoring: Serving Side Win</h2>\n  <div class=\"row\">\n    <div class=\"col text-center\">\n      <strong>Opponent Ball Errors</strong>\n      <ol class=\"text-left mt-3\">\n        <li>Opponent hits the ball into the net and it fails to clear.</li>\n        <li>Opponent hits the ball out of bounds (beyond any sideline or baseline).</li>\n        <li>Opponent lets the ball bounce twice on their side.</li>\n        <li>Opponent makes an illegal double hit, carry, or catch/throw.</li>\n      </ol>\n      <img src=\"https://cdn.sanity.io/images/jvolei4i/production/f279c48b3e428c3fec413bd99170151d45147ee0-736x450.png?w=736&fit=crop\" alt=\"Opponent Ball Errors\" class=\"img-fluid scoring-img\">\n    </div>\n    <div class=\"col text-center\">\n      <strong>Opponent Double-Bounce Violations</strong>\n      <ol class=\"text-left mt-3\">\n        <li>Opponent volleys the serve return before it bounces on their side.</li>\n        <li>Double-bounce rule violation on subsequent shots.</li>\n        <li>Volley (third shot) before it bounces.</li>\n <br>      </ol>\n      <img src=\"https://cdn.sanity.io/images/jvolei4i/production/612e2422df42b98e80205c98a2ea67ff60b110e3-736x450.png?w=736&fit=crop\" alt=\"Opponent Violations\" class=\"img-fluid scoring-img\">\n    </div>\n  </div>\n  <div class=\"results-section text-center mt-4\">\n    <strong>Result</strong>\n    <ol class=\"text-left mt-3\">\n      <li>Serving side gets a score.</li>\n      <li>Person serving must switch sides with teammate after every point.</li>\n   </ol>\n    <img src=\"https://pickleballkitchen.com/wp-content/uploads/2018/05/serveSwitch2.jpg\" alt=\"Serve Switch Result\" class=\"img-fluid scoring-img mt-3\">\n  </div>\n</div>",
+        "prev_page": 9,
+        "next_page": 11
+      },
+      {
+        "page": 11,
+        "title": "What Happens Next?",
+        "content_html": "<div class=\"tutorial-content\">\n  <h2>What Happens Next?</h2>\n  <ol>\n    <li>Serve switches to opposition.</li>\n    <li>Once both teammates have served and faulted (lost), the serve goes to the opposition.</li>\n  </ol>\n  <img src=\"https://us-west-2.graphassets.com/cm09r96wy0qax07ln5vscfbra/cm4hi84nq6w5p07n4oi4dlz4j\" alt=\"What Happens Next\" class=\"img-fluid\">\n</div>",
+        "prev_page": 10,
+        "next_page": 12
+      },
+      {
+        "page": 12,
+        "title": "Non-Volley Zone or The Kitchen",
+        "content_html": "<div class=\"tutorial-content\">\n  <h2>Non-Volley Zone or The Kitchen</h2>\n  <p><strong>Rules for the zone:</strong></p>\n  <ol>\n    <li>If the ball is in this zone, you <strong>MUST</strong> let it bounce once before hitting it.</li>\n    <li>You cannot volley while any part of your feet is in the zone.</li>\n  </ol>\n  <p><em><strong>Volley</strong> – hit the ball while it’s in the air before it has bounced.</em></p>\n  <img src=\"https://cdn.sanity.io/images/jvolei4i/production/f64602ef25b407873733b20effd99c5cd1def4a4-736x450.png?w=736&fit=crop\" alt=\"Kitchen Zone\" class=\"img-fluid\">\n</div>",
+        "prev_page": 11,
+        "next_page": "quiz"
+      }
+    ]
+  }
+  
+
+  
